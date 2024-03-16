@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrar / Descifrar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https: //fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <image class="logo" src="./Logo.png" width="120px" height="48px"></image>
+        <div class="datos">
+            <textarea name="text" placeholder="Ingrese el texto aqui" id="valor" autofocus></textarea>
+            <div>
+                <div id="validacion">
+                    <img src="./Vector.png" width="16">
+                    Solo letras minúsculas y sin acentos
+                </div>
+                <div class="boton-contenedor">
+                    <button id="cifrar" class="boton boton-primario">Cifrar</button>
+                    <button id="descifrar" class="boton boton-secundario">Descifrar</button>
+                </div>
+            </div>
+        </div>
+        <div id="resultado" class="resultado">
+            <div id="texto-resultado"></div>
+            <div id="vacio">
+                <img class="vacio-imagen" src="./image.png" />
+                <div class="no-encontrado-titulo">Ningún mensaje fue encontrado</div>
+                <div class="no-encontrado-texto">Ingresa el texto que desees encriptar o desencriptar.</div>
+            </div>
+            <div id="copiar" class="boton boton-secundario boton-copiado">Copiar</div>
+            <div id="mensaje" class="confirmacion-copia">Mensaje copiado</div>
+        </div>
+    </div>
+    <footer>
+        <p>Gina Maleydi Garzon Garzon 2024</p>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
